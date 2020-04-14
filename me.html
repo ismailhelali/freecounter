@@ -5,25 +5,22 @@
     <head>
         <script>
 
-            // Set starting value of counter to 0
-            if (!localStorage.getItem('counter'))
-                localStorage.setItem('counter', 0);
+           let counter = 0;
 
-            // Load current value of  counter
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector('#counter').innerHTML = localStorage.getItem('counter');
-                document.querySelector('#counter1').innerHTML = localStorage.getItem('counter');
-
-          
+            function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+            }
                
-              document.querySelectorAll('.count-number').forEach(function(button) {
-                    button.onclick = function() {
- 
-               let counter = localStorage.getItem('#counter1');
-                    counter++;  
-                document.querySelector('#counter1').innerHTML = counter;
-                localStorage.setItem('#counter1', counter);
-                    }});
+              let counterh = 0;
+
+            function count() {
+                counterh++;
+                document.querySelector('#counterh').innerHTML = counterh;
+            }
+               
+               
+               
         </script>
         <title>Let's Count</title>
             <meta charset="UTF-8">
@@ -70,11 +67,20 @@
            
          <div class="container">
                 
+                
+               
+        <button onclick="count()">
+               <h1>Love</h1>
+               <h1 id="counter">0</h1>
+        </button>
+                
+         <button onclick="count()">
+               <h1>Hate</h1>
+               <h1 id="counterh">0</h1>
+        </button>
+
        
-        <button class=".count-number">Love
-                  <h1 id="counter"></h1> </button>
-        <button class=".count-number">Hate
-                  <h1 id="counter1"></h1> </button>
+      
      
     </body>
 </html>
