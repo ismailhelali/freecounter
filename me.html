@@ -24,9 +24,23 @@
                     localStorage.setItem('counter', counter);
                 }
             });
+               
+               
+            document.addEventListener('DOMContentLoaded', () => {
+                setInterval(count, 1000);
+            });
+
+            let counter = 0;
+
+            function count() {
+                counter++;
+                document.querySelector('#counters').innerHTML = counter;
+
 
         </script>
         <title>Let's Count</title>
+            <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
@@ -34,7 +48,12 @@
          <div class="container">
             <h1>Hello, world!</h1>
             <p>This is a simple web page that allow you to count ! things like how much time do you hear the Word Coronavirus and how much time you hear the word Love or tolerance, this will help you Understanding Your Conscious Mind</p>
-
+            <h1>Please, spread Love and share this web application</h1>
+           </div>       
+                
+        <h1>your total time is s</h1>
+        <h1 id="counters">0</h1>
+                
         <h1 id="counter"></h1>
         <button>Click Here!</button>
     </body>
