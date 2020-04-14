@@ -24,5 +24,5 @@
 
             }
             
-           LocalStorage.getitemAll(counter,counterh)    ;           
+           LocalStorage.setItem("counter","counterh")    ;           
                
