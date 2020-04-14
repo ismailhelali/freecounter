@@ -14,21 +14,16 @@
                 document.querySelector('#counter').innerHTML = localStorage.getItem('counter');
                 document.querySelector('#counter1').innerHTML = localStorage.getItem('counter');
 
-                // Count every time button is clicked
-                document.querySelector('button').onclick = () => {
-                    // Increment current counter
-                    let counter = localStorage.getItem('counter');
-                    counter++;
-
-                    // Update counter
-                    document.querySelector('#counter').innerHTML = counter;
-                    localStorage.setItem('counter', counter);
-                       
-                    document.querySelector('#counter1').innerHTML = counter;
-                    localStorage.setItem('counter', counter);
-                }
-            });
+          
                
+              document.querySelectorAll('.count-number').forEach(function(button) {
+                    button.onclick = function() {
+ 
+               let counter = localStorage.getItem('#counter1');
+                    counter++;  
+                document.querySelector('#counter1').innerHTML = counter;
+                localStorage.setItem('#counter1', counter);
+                    }});
         </script>
         <title>Let's Count</title>
             <meta charset="UTF-8">
@@ -76,9 +71,9 @@
          <div class="container">
                 
        
-        <button>Love
+        <button class=".count-number">Love
                   <h1 id="counter"></h1> </button>
-        <button>Hate
+        <button class=".count-number">Hate
                   <h1 id="counter1"></h1> </button>
      
     </body>
