@@ -25,26 +25,6 @@
                 }
             });
                
- // Set starting value of counter to 0
-            if (!localStorage.getItem('counter1'))
-                localStorage.setItem('counter1', 0);
-
-            // Load current value of  counter1
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector('#counter1').innerHTML = localStorage.getItem('counter1');
-
-                // Count every time button is clicked
-                document.querySelector('button1').onclick = () => {
-                    // Increment current counter
-                    let counter = localStorage.getItem('counter1');
-                    counter1++;
-
-                    // Update counter1
-                    document.querySelector('#counter1').innerHTML = counter1;
-                    localStorage.setItem('counter1', counter1);
-                }
-            });
-
         </script>
         <title>Let's Count</title>
             <meta charset="UTF-8">
@@ -56,10 +36,7 @@
   display:flex;
   flex-wrap:wrap;
   }
-  .container{
-  display:flex;
-  flex-wrap:wrap;
-  }
+
   
  
  
@@ -72,25 +49,15 @@
   width:200px;
   text-decoration: none;
   text-align: center;
+  transform: rotate(45deg);
     }
-  .container button1 {
-  color:#ddd;
-  background-color:black;
-  font-size:20px;
-  Margin:20px;
-  padding:20px;
-  width:200px;
-  text-decoration: none;
-  text-align: center;
+
     }
   .container button:hover {
   background-color: #ddd;
   color: black;
     }
-  .container button1:hover {
-  background-color: #ddd;
-  color: black;
-    }
+
     </style>
        </head>
     <body>
