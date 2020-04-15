@@ -6,14 +6,14 @@
   }
 
   
-  .citation {
+  .citation p1 {
   align: center;
-  color:#ddd;
+  color:black;
   background-color:red;
-  font-size:20px;
+  font-size:14px;
   Margin:20px;
   padding:20px;
-  width:auto;
+  width:100%;
   text-decoration: none;
   text-align: center;
     }
@@ -43,7 +43,4 @@
 
     }
 
-  #counterh:hover {
-  background-color: red;
-  color: black;
-    }
+
