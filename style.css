@@ -91,7 +91,7 @@ body {
 }
 
 @media screen and (max-width:600px) {
-  .topnav {
+  .topnav a {
     width: 100%;
   }
 }
