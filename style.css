@@ -6,10 +6,20 @@
   }
 
   
- 
+  .citation {
+  align: center;
+  color:#ddd;
+  background-color:red;
+  font-size:20px;
+  Margin:20px;
+  padding:20px;
+  width:auto;
+  text-decoration: none;
+  text-align: center;
+    }
  
   .container button {
-  align: center;
+  
   color:#ddd;
   background-color:black;
   font-size:20px;
