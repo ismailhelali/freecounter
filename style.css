@@ -5,19 +5,6 @@
   flex-wrap:wrap;
   }
 
-  
-  .citation p1 {
-  align: center;
-  color:black;
-  background-color:red;
-  font-size:14px;
-  Margin:20px;
-  padding:20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-  text-align: center;
-    }
  
   .container button {
   
@@ -103,3 +90,8 @@ body {
   }
 }
 
+@media screen and (max-width:600px) {
+  .topnav {
+    width: 100%;
+  }
+}
