@@ -26,11 +26,7 @@
             
       
       function mouseOver() {
-      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.color = "black";
+      document.getElementById("demo").style.backgroundColor="red";
        }
 
-      function mouseOut() {
-      document.getElementById("demo").style.color = "black";
-      }
-        
-               
