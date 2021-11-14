@@ -73,9 +73,9 @@ body {
 .column {
   float: left;
   width: 100%;
-  display: flex;
-  position: relative;
-  padding: 15px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 /* Clear floats after the columns */
